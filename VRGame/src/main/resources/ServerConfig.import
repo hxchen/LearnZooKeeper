@@ -1,4 +1,4 @@
-# cat /Users/haixiangchen/Desktop/IdeaProjects/hxchen/LearnZooKeeper/VRGame/src/main/resources/ServerConfig.import | grep -v '^#' | grep -v '^$' | /Users/haixiangchen/Desktop/zookeeper/bin/zkCli.sh
+# cat /Users/user/Desktop/IdeaProjects/user/LearnZooKeeper/VRGame/src/main/resources/ServerConfig.import | grep -v '^#' | grep -v '^$' | /Users/user/Desktop/zookeeper/bin/zkCli.sh
 
 deleteall /VRGame
 create /VRGame ''
