@@ -1,0 +1,27 @@
+# cat /Users/haixiangchen/Desktop/IdeaProjects/hxchen/LearnZooKeeper/VRGame/src/main/resources/ServerConfig.import | grep -v '^#' | grep -v '^$' | /Users/haixiangchen/Desktop/zookeeper/bin/zkCli.sh
+
+deleteall /VRGame
+create /VRGame ''
+create /VRGame/GameServers ''
+
+create /VRGame/GameServers/1 ''
+create /VRGame/GameServers/1/MySql ''
+create /VRGame/GameServers/1/MySql/url 'jdbc:mysql://127.0.0.1:3306/vr_game_1?characterEncoding=utf8&connectTimeout=10000&useSSL=false'
+create /VRGame/GameServers/1/MySql/username 'root'
+create /VRGame/GameServers/1/MySql/password 'root'
+create /VRGame/GameServers/1/GAME_CONFIG_END_FLAG 'GAME_CONFIG_END_FLAG'
+
+
+create /VRGame/GameServers/2 ''
+create /VRGame/GameServers/2/MySql ''
+create /VRGame/GameServers/2/MySql/url 'jdbc:mysql://127.0.0.1:3306/vr_game_2?characterEncoding=utf8&connectTimeout=10000&useSSL=false'
+create /VRGame/GameServers/2/MySql/username 'root'
+create /VRGame/GameServers/2/MySql/password 'root'
+create /VRGame/GameServers/2/GAME_CONFIG_END_FLAG 'GAME_CONFIG_END_FLAG'
+
+create /VRGame/GameServers/3 ''
+create /VRGame/GameServers/3/MySql ''
+create /VRGame/GameServers/3/MySql/url 'jdbc:mysql://127.0.0.1:3306/vr_game_3?characterEncoding=utf8&connectTimeout=10000&useSSL=false'
+create /VRGame/GameServers/3/MySql/username 'root'
+create /VRGame/GameServers/3/MySql/password 'root'
+create /VRGame/GameServers/3/GAME_CONFIG_END_FLAG 'GAME_CONFIG_END_FLAG'
